@@ -1,0 +1,42 @@
+[
+    {
+        "id" : "368769930029563906",
+        "config" : {
+            "antiBadword" :{
+                "isActive": true,
+                "channel": "1234",
+                "isAdminAllowed": false,
+                "config":{
+                    "evil": true,
+                    "sexual": true,
+                    "japanese_sex": true,
+                    "horny": true,
+                    "sex_action": true,
+                    "lgbtq": true,
+                    "swears": true,
+                    "animal": true,
+                    "racism": true,
+                    "emoji": true,
+                    "other": true,
+                    "custom":[]
+                }
+            },
+            "attachmentLog" :{
+                "isActive": true,
+                "channel": "812478556214263808"
+            },
+            "yiffDetect" :{
+                "isActive": true
+            },    
+            "commands" :{
+                "normal": {
+                    "isActive": true,
+                    "prefix": ""
+                },
+                "slash": {
+                    "isActive": true
+                }
+            }
+        }
+    }
+]
