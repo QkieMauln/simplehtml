@@ -5,7 +5,8 @@
             "antiBadword" :{
                 "isActive": true,
                 "channel": "813209681509875753",
-                "isAdminAllowed": true,
+                "isAdminAllowed": false,
+                "isNSFWChannelAllowed": true,
                 "config":{
                     "evil": true,
                     "sexual": true,
