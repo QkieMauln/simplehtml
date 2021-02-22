@@ -1,10 +1,10 @@
 [
     {
-        "id" : "368769930029563906",
+        "id" : "598284769641627651",
         "config" : {
             "antiBadword" :{
                 "isActive": true,
-                "channel": "1234",
+                "channel": "813209681509875753",
                 "isAdminAllowed": false,
                 "config":{
                     "evil": true,
@@ -23,10 +23,11 @@
             },
             "attachmentLog" :{
                 "isActive": true,
-                "channel": "812478556214263808"
+                "channel": "813209681509875753"
             },
             "yiffDetect" :{
-                "isActive": true
+                "isActive": true,
+                "channel": "813209681509875753"
             },    
             "commands" :{
                 "normal": {
