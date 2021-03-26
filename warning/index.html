@@ -34,18 +34,18 @@
     width:100%;
     filter: drop-shadow(5px 5px 0 rgba(0,0,0,0.4));
     }
-    .link-nekopoi {
-    text-align: left;
-    position: relative;
-    margin: auto;
-    max-width: 300px;
-    border: 1px solid;
-    padding: 10px 10px 10px 30px;
-    }
+.link-nekopoi {
+text-align: left;
+position: relative;
+margin: auto;
+max-width: 300px;
+border: 1px solid;
+padding: 10px 10px 10px 30px;
+}
     </style>
     <script>function gq(n, u = window.location.href) { n = n.replace(/[\[\]]/g, '\\$&'); var r = new RegExp('[?&]' + n + '(=([^&#]*)|&|#|$)'), res = r.exec(u); if (!res) return null; if (!res[2]) return ''; return decodeURIComponent(res[2].replace(/\+/g, ' ')); }</script>
-    <script> var data_link = ["webmcanimid.herokuapp.com", "mcanimid.org", "beta.mcanimid.org", "mcanimid.project.qkie.xyz"]</script>
-    <script>$(document).ready(function(){$(".jalannya").text(gq("goingto")); for(var d of data_link){$(".link-nekopoi").append(`<li><a href="//${d}/${gq("goingto")?gq("goingto"):""}">${d}</a></li>`)}})</script>
+<script> var data_link = ["webmcanimid.herokuapp.com", "mcanimid.org", "beta.mcanimid.org", "mcanimid.project.qkie.xyz"]</script>
+    <script>$(document).ready(function(){$(".jalannya").text(gq("goingto")); for(var d of data_link){$(".link-nekopoi").append($("<li>").append($("<a>").text(d).attr("href",`//${d}/${gq("goingto")?gq("goingto"):""}`)))}})</script>
   </head>
   <body>
     <!-- INSPECT TEROZZZ. Kepo Banget Dah >:( *Easter Egg -->
@@ -58,10 +58,10 @@
         <p>Well... we will wait till we get the new server to host this website. But! If you from mcanimid members who want to fill out the form. Well you are late! Contact Us instead!</p>
         <a href="https://discord.gg/j24UKsj" target="_blank"><h3>discord.gg/j24UKsj</h3></a>
         <p>We do have alternative for that. Yea just incase when the website dead</p>
-        <ol class="link-nekopoi"></ol>
+<ol class="link-nekopoi">
+</ol>
         <p>If the link not working. Well to bad then... We dont have an options left... sadly...</p>
       </div></div>
-      <a href="//github.com/qkiemauln">github.com/qkiemauln</a>
     </div>
   </body>
 </html>
