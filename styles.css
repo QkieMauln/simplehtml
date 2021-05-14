@@ -5,6 +5,9 @@ body{
 	padding-top: 50px ;
 	padding: 5%;
 }
+hr {
+	border: 5px solid;
+}
 
 /*social media color*/
 .social-media{
@@ -61,8 +64,11 @@ body{
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 .repo-list{
+	margin-left: auto;
+	margin-right: auto;
 	box-shadow: 2px 2px 7px 0 rgba(0,0,0,0.2);
 	background: #f9f9f9;
+	width: 80%;
 }
 .repo-list .title{
 	font-size: 20px;
@@ -74,6 +80,8 @@ body{
 	transition: 0.7s;
 }
 .repo-list .content:hover{
+	transform: scale(1.1);
+	box-shadow: 2px 2px 7px 0 rgba(0,0,0,0.4);
 	background: #57d26c;
 	color: #fff;
 	
@@ -144,7 +152,7 @@ body{
 @media only screen and (max-width: 630px){
 .dropdown{
 	width: 60%;
-}
+}}
 @media only screen and (max-width: 422px){
 .dropdown{
 	width: 80%;
