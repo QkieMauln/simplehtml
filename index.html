@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html>
- <head>
- 	<title>QkieMauln - Welcome to my GithubPage</title>
- 	<meta keyword="author" description="Si Rizky Gak Jelas hehe"/>
+<head>
+	<title>QkieMauln - Welcome to my GithubPage</title>
+	<meta keyword="author" description="Si Rizky Gak Jelas hehe"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Patrick+Hand+SC|Signika+Negative&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta property="og:type" content="website" />
-  	<meta content="#33b3f7" name="theme-color" />
-  	<meta content="#33b3f7" name="msapplication-navbutton-color" />
-	<meta property="og:title" content="Qkiemauln github HomePage!" />
-	<meta property="og:description" content="Well hello there xD welcome to my Github home page. Try everything!" />
- 	<link rel="stylesheet" href="styles.css">
- </head>
- <body>
- 	<div class="top-nav">
- 		<span class="scroll-bar" id="scrollcontainer"></span>
- 		<span class="title">QkieMauln</span>
- 		<span class="dropdown-button"><i class="fa fa-user  paper-icon"></i>
- 	<div class="dropdown" id="dropdown-1">
- 		<a class="email" href="https://qkyunofficial@gmail.com"><i class="icon fa fa-envelope"></i> Email Me</a>
- 		<a class="discord" href="https://discord.gg/pdqzKj4"><i class="icon fab fa-discord"></i> Join My Server</a>
- 		<a class="instagram" href="https://instagram.com/qkie_fx"><i class="icon fab fa-instagram"></i> Follow Me</a>
- 		<a class="youtube" href="https://m.youtube.com/channel/UCLDco-E1EJbXjPEXzlr_hmQ"><i class="icon fab fa-youtube"></i>Subscribe me</a>
- 		<a class="xbox" href="https://account.xbox.com/en-us/Profile?xr=mebarnav"><i class="icon fab fa-xbox"></i>Add me</a>
- 	</div></span>
- 	</div>
- 	<div class="content">
- 	<center>
- 	<h1>Welcome To My Main Github Page</h1></center>
- 	<p>Oh hi, and welcome to my HomePage. Why i made this? I made this because i want to share my works to you guys :)</p>
- 	<p>Ok so this is my first Repository. I have Completely no life. I even dont know what am i talking about, and why i make this??? This is so stupid.
- 	Please go away from my life</p>
- 	<hr>
- 	<center><h3>Hey! Look at my Thingy</h3></center>
- 	<p>This is stupid right? xD i dont know what am i doing right now. (Oh and my Grammar is bad too..). You may realize if im come from Indonesia, and Thats a fact! No one care. oh this is my Latest Repository. Enjoy my thingy</p>
- 	<div class="repo-list">
- 		<div class="content"><a class="title" href="roman">Roman Birthday</a><p>Its should for  him. But you can open it by putting a password. The password is "romanultah" with no capitalize text</p></div>
- 		<div class="content"><a class="title" href="discord-bot-webclient">Discord Bot Web Client</a><p>This is My thingy. Im Trying messing around with Discord webpack</p></div>
- 	</div>
- 	<hr>
- 	<center><h3>Hey! Look at my Social Media too!</h3></center>
- 	<p>Just Follow me on instagram, Join my discord server, and so much more...</p>
- 	<div id="socmed" class="social-media">
- 		<a class="email" href="https://qkyunofficial@gmail.com"><i class="icon fa fa-envelope"></i> Email Me</a>
- 		<a class="discord" href="https://discord.gg/pdqzKj4"><i class="icon fab fa-discord"></i> Join My Server</a>
- 		<a class="instagram" href="https://instagram.com/qkie_fx"><i class="icon fab fa-instagram"></i> Follow Me</a>
- 		<a class="youtube" href="https://m.youtube.com/channel/UCLDco-E1EJbXjPEXzlr_hmQ"><i class="icon fab fa-youtube"></i>Subscribe me</a>
- 		<a class="xbox" href="https://account.xbox.com/en-us/Profile?xr=mebarnav"><i class="icon fab fa-xbox"></i>Add me</a>
- 	</div>
- 	</div>
- </body>
- 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="icon" href="favicon.ico" type="image/ico">
+	<meta property="og:type" content="website" />
+	<meta content="#45bcff" name="theme-color" />
+	<meta content="#45bcff" name="msapplication-navbutton-color" />
+	<meta property="og:title" content="Qkiemauln Dev!" />
+	<meta property="og:description" content="Hello! Welcome to Qkiemauln Website :D QkieMauln is my name :D my name is originated from..." />
+	<link rel="stylesheet" href="styles.css">
+	<script src="js/datajson.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="alertThing">
+		<div class="alerta" v-if="first">
+			<div class="popup">
+				<p><b>Please Wait!</b> When the impostor is sus 😳</p>
+				<button>Amogus</button>
+			</div>
+		</div>
+		<alert v-for="popup in popups" v-bind:title="popup.title" v-bind:description="popup.description" v-bind:buttontext="popup.button"></alert>
+	</div>
+	<div class="main" style="display: none;" v-bind:style="'display: block;'">
+		<div class="header">
+			<div class="title-title"><h1 v-on:click="clickToPop('Its My Name :D Also this is the homepage so you dont have to click that xD')">🐾 QkieMauln Dev</h1></div>
+			<div class="title slogan">
+				<h2>My name is Qky</h2>
+				<p>Hi! Im Qky. I love cats! by cats i mean a lot of them! Do you think i dont like Dogs? Of course i do love Dogs and Wolves 🤩. But im more to the Cat Person than Dog Person xD.</p>
+				<p>Well you may say "I dont ask you that if you a cat or a dog person!?", well yes eventually. That's just my bio xD</p>
+			</div>
+			<div class="title slogan">
+				<h2>About Myself</h2>
+				<p>Im Qky. My real name is Qky Mauln. I live in Indonesia, SouthEast Asia, nice to meet you :D. Keep Scrolling to bottom so you know me more xD</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title project">
+				<h2>What i've been make for the past {{years}} Years?</h2>
+				<p>I make alot i think? When im in the mood to do that. Some projects are private untill i considering to publishing it</p>
+				<p>Im bad at making the source code readable and understandable to everyone... Im lazy so its fair i guess xD. Click to any project to see more xD</p>
+			</div>
+			<div class="flex">
+				<div class="list-of-proj">
+					<items-project v-for="project in projects" v-bind:title="project.name" v-bind:description="project.description" v-bind:path="project.path" v-bind:detail="project.dataDetail"></items-project>
+					<!-- <div class="the-proj">
+					  <h1>When the impostor</h1>
+					  <div class="info">
+						  <div class="g">✅ Finished</div>
+						  <div class="y">📄❔ The Code is Messed-Up</div>
+						  <div class="r">🇮🇩 Indonesia Language only?</div>
+						  <div class="r">💥 Its Bad!</div>
+					</div>
+					  <p>Sus</p>
+					</div> -->
+				</div>
+				<div>
+					<div class="uselssfact stickity">
+						<h1>📌 Useless fact</h1>
+						<p>Sometimes you want to fill some empty gaps with something to make it seems contentful. (this Useless Fact will appear if your window width were +700px)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title project">
+				<h2>What i've been learn?</h2>
+				<p>Well i learn alot xD. I usually use JavaScript and TypeScript Language. Sometimes python and C# (I rarely use this language but someday i will)</p>
+				<ul>
+					<li>Node.JS
+						<ol>
+							<li>Discord.JS</li>
+							<li>Express</li>
+							<li>ReactJS</li>
+							<li>MongoDB</li>
+						</ol>
+					</li>
+					<li>JavaScript
+						<ol>
+							<li>VueJS</li>
+							<li>JQuery</li>
+						</ol>
+					</li>
+					<li>TypeScript</li>
+					<li>FrontEnd Stuff
+						<ol>
+							<li>HTML</li>
+							<li>CSS / SCSS</li>
+							<li>JavaScript</li>
+						</ol>
+					</li>
+					<li>Python</li>
+					<li>C#</li>
+				</ul>
+			</div>
+			<div class="title facts">
+				<h1>📌 Facts bout me</h1>
+				<p>You may dont know but I have an interest to create a game. It would be awesome to create your own game 🤩. Sometimes i do animation, VFX and Drawing beside Programming. Programming just a hobby for me xD</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="title slogan">
+				<h2>About Me</h2>
+				<p>This section is dedicated for about myself</p>
+			</div>
+			<div class="title qna">
+				<h3>How old are you?</h3>
+				<p>Im {{today.getFullYear() - 2004}} Years old. Well {{(today.getFullYear() - 2004)>18?"im old enough to go to work":"im still on school. Someday i will go to College xD"}}</p>
+			</div>
+			<div class="title qna">
+				<h3>How to Contact me or do i have Social Media?</h3>
+				<p>Yes i have social media and you can contact me via below</p>
+				<ul>
+					<li v-for="t in socialMedia"><a v-bind:href="t.url" target="_blank">{{t.name}}</a></li>
+				</ul>
+			</div>
+			<h4>Thanks for reading to the bottom :D</h4>
+			<p>This is the end of the page :D <b style="cursor: pointer;" v-on:click="clickToPop('Want to see something nostalgic? Go to https://youtu.be/hMtZfW2z9dw and you willnt regret it xD (Definitely not a Rickroll!)')">Unless... You want to Click this Text? ;)</b></p>
+			<div class="credit"><a>This Web Page Created using Vue.js | QkieMauln&copy; {{today.getFullYear()}}</a></div>
+		</div>
+	</div>
+
+</body>
 </html>
