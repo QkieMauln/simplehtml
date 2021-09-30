@@ -9,6 +9,7 @@
                 "isAdminAllowed": false,
                 "isNSFWChannelAllowed": true,
                 "silent": false,
+                "resendCensored": true,
                 "config":{
                     "evil": true,
                     "sexual": true,
@@ -33,10 +34,10 @@
                 }
             },
             "attachmentLog" :{
-                "isActive": true,
+                "isActive": false,
                 "channel": "813209681509875753",
                 "filterChannels":{
-                    "list":[],
+                    "list":["802047309755842560", "777701950380179486", "813209681509875753"],
                     "invert": false
                 }
             },
@@ -78,11 +79,12 @@
                 "isAdminAllowed": false,
                 "isNSFWChannelAllowed": true,
                 "silent": true,
+                "resendCensored": false,
                 "config":{
                     "evil": true,
                     "sexual": true,
                     "japanese_sex": true,
-                    "horny": true,
+                    "horny": false,
                     "sex_action": true,
                     "lgbtq": false,
                     "swears": true,
@@ -141,7 +143,223 @@
                 },
                 "slash": {
                     "isActive": true,
-                    "moderationOnly": true
+                    "moderationOnly": false
+                }
+            }
+        }
+    },
+    {
+        "id" : "552431782516228106",
+        "blacklist": [
+        ],
+        "config" : {
+            "antiBadword" :{
+                "isActive": true,
+                "channel": "827345648290234430",
+                "isAdminAllowed": true,
+                "isNSFWChannelAllowed": true,
+                "silent": false,
+                "resendCensored": true,
+                "config":{
+                    "evil": true,
+                    "sexual": true,
+                    "japanese_sex": true,
+                    "horny": true,
+                    "sex_action": true,
+                    "lgbtq": false,
+                    "swears": true,
+                    "animal": true,
+                    "racism": true,
+                    "emoji": true,
+                    "other": true,
+                    "custom":[]
+                },
+                "response":{
+                    "normal": ["Uwaaa si {user} lagi ||{word}|| nih :3 ! Lain kali jangan ngomong gitu lagi yahh :> | <#552434828021334063> 7 dan 10"],
+                    "admin": ["Admin gak boleh loh ngomong {word}! berlaku untuk semua admin bahkan owner"]
+                },
+                "filterChannels":{
+                    "list":[
+                    ],
+                    "invert": false
+                }
+            },
+            "attachmentLog" :{
+                "isActive": true,
+                "channel": "827345648290234430",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },
+            "nickChanger" :{
+                "isActive": true,
+                "channel": "827345648290234430",
+                "isAdminAllowed": false,
+                "isHoistAllowed": false
+            },
+            "yiffDetect" :{
+                "isActive": false,
+                "channel": "827345648290234430",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },    
+            "commands" :{
+                "normal": {
+                    "isActive": false,
+                    "prefix": ""
+                },
+                "slash": {
+                    "isActive": true,
+                    "moderationOnly": false
+                }
+            },
+            "greetings":{
+                "isActive": true,
+                "channel":"552451427692445708",
+                "message":"Selamat datang {user} .sebelum chat, baca # terlebih dahulu dan silahkan ambil Role di #⭐-roles"
+            }
+        }
+    },
+    {
+        "id" : "304421259872043009",
+        "blacklist": [
+        ],
+        "config" : {
+            "antiBadword" :{
+                "isActive": true,
+                "channel": "567791137708965908",
+                "isAdminAllowed": true,
+                "isNSFWChannelAllowed": true,
+                "silent": false,
+                "resendCensored": false,
+                "config":{
+                    "evil": true,
+                    "sexual": true,
+                    "japanese_sex": true,
+                    "horny": true,
+                    "sex_action": true,
+                    "lgbtq": false,
+                    "swears": true,
+                    "animal": true,
+                    "racism": true,
+                    "emoji": true,
+                    "other": false,
+                    "custom":[]
+                },
+                "response":{
+                    "normal": ["Wah kamu ini {word} yah :3 ! Lain kali jangan ngomong gitu lagi yahh :>"],
+                    "admin": ["Admin gak boleh loh ngomong {word}! berlaku untuk semua admin bahkan owner"]
+                },
+                "filterChannels":{
+                    "list":[
+                    ],
+                    "invert": false
+                }
+            },
+            "attachmentLog" :{
+                "isActive": true,
+                "channel": "567791137708965908",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },
+            "nickChanger" :{
+                "isActive": true,
+                "channel": "567791137708965908",
+                "isAdminAllowed": false,
+                "isHoistAllowed": false
+            },
+            "yiffDetect" :{
+                "isActive": false,
+                "channel": "567791137708965908",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },    
+            "commands" :{
+                "normal": {
+                    "isActive": false,
+                    "prefix": ""
+                },
+                "slash": {
+                    "isActive": true,
+                    "moderationOnly": false
+                }
+            }
+        }
+    },
+    {
+        "id" : "756464298695327745",
+        "blacklist": [
+        ],
+        "config" : {
+            "antiBadword" :{
+                "isActive": true,
+                "channel": "824959247539372042",
+                "isAdminAllowed": false,
+                "isNSFWChannelAllowed": true,
+                "silent": false,
+                "resendCensored": false,
+                "config":{
+                    "evil": true,
+                    "sexual": true,
+                    "japanese_sex": false,
+                    "horny": false,
+                    "sex_action": true,
+                    "lgbtq": false,
+                    "swears": true,
+                    "animal": true,
+                    "racism": true,
+                    "emoji": true,
+                    "other": false,
+                    "custom":[]
+                },
+                "response":{
+                    "normal": ["Waahh, jangan gitu dong! Jangan bilang ||{word}|| ! Jangan ulang perkataan itu lagi, oke?! :D"],
+                    "admin": ["Kamu ini admin! Kok bilang ||{word}|| sih?! Kamu seharusnya berikan contoh yang baik buat para member! >:("]
+                },
+                "filterChannels":{
+                    "list":[
+                        "867986595314302986"
+                    ],
+                    "invert": false
+                }
+            },
+            "attachmentLog" :{
+                "isActive": false,
+                "channel": "",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },
+            "nickChanger" :{
+                "isActive": false,
+                "channel": "",
+                "isAdminAllowed": false,
+                "isHoistAllowed": false
+            },
+            "yiffDetect" :{
+                "isActive": false,
+                "channel": "",
+                "filterChannels":{
+                    "list":[],
+                    "invert": false
+                }
+            },    
+            "commands" :{
+                "normal": {
+                    "isActive": false,
+                    "prefix": ""
+                },
+                "slash": {
+                    "isActive": true,
+                    "moderationOnly": false
                 }
             }
         }
